@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tina's Shop</title>
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://d19m59y37dris4.cloudfront.net/shirt/2-1-1/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css"media="screen and (max-device-width: 400px)"href="tinyScreen.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" ></script>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <link  rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">   
+          <ul class="menu">
+            <li class="menu-item"><a href="#">my cart(4)</a>
+              <ul class="dropdown">        
+                <div class="woocom-cart">
+          <!-- cart item -->
+          <div class="cart-item d-flex  text-capitalize ">
+            <img src="images/classic-tee.jpg" class="img-fluid " id="item-img" alt="White Tee">
+               
+                 <div class="item1">  
+                   <h6 id="item-name">Classic Tee</h6> 
+                    <h5 class="store-item-value">1x <strong id="store-item-price" class="font-weight-bold">$75.00</strong></h5>
+                      <h5 id="Cart.details">Size:S</h5>
+                </div>
+          </div>
+          <div class="cart-item d-flex  text-capitalize ">
+              <img src="images/classic-tee.jpg" class="img-fluid " id="item-img" alt="White Tee">
+               
+                 <div class="item2">  
+                  <h6 id="item-name">Classic Tee</h6> 
+                    <h5 class="store-item-value">3x <strong id="store-item-price" class="font-weight-bold">$75.00</strong></h5>
+                      <h5 id="Cart.details">Size:L</h5>
+                 </div>
+                </div> 
+
+            <a href="#" id='cart-item-remove' class="cart-item-remove">
+              <i class="fas fa-trash"></i>
+            </a>
+          </div>
+          <!--end of  cart item -->
+                </div>
+             </li>
+         </ul> 
+        </nav>
+        <div class="col-lg-6 col-md-8 col-12">
+                <img class="ClassicTee" src="images/classic-tee.jpg"  alt="White Tee" />   
+        </div>  
+        <div class="container">
+                <div class="shopping-cart">
+                  <div class="shopping-cart-header">        
+        </div>
+        <div class="cart-overlay">
+            <div class="cart">    
+            </div>
+        </div>
+    <div class="card-body"> 
+        <div class="col-lg-6 col-md-8 col-12">  
+          <h3 id="store-item-name">Classic Tee</h3> 
+                <hr>
+                <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">75</strong></h5>
+                <hr>
+                <p id="details">Dolor sit amet,consectetur adipiscing elit.Haec et tu ita posuisti,
+                                et verba vestra sun.Quod autem ratione actum est,id offcium appellamus dolor sit amet,
+                                comsectetur adipiscing elit.Haec et tu ita posuisti,et verba vestra sunt.Quod autem 
+                                ratione actum est,id officium appellamus</p>
+                <div class="ss">
+                  <div class="title">
+                     SIZE
+                  </div>
+                     <span class="shown-size" id='shirt'>S</span>
+                     
+                        <div id="one"></div>
+                            <ul class="sizes">
+                               <li class="Square" onclick="myFunction()"id="S1">S</li>
+                               <li class="Square" onclick="myFunction()"id="S2">M</li>
+                               <li class="Square" onclick="myFunction()"id="S3">L</li>
+                             </ul>
+                        
+                          </div>
+                          <div class='text-left'>
+                            <button id="small" onclick='size(1)' class='btn btn-black'>S</button>
+                            <button id="med" onclick='size(2)' class='btn'>M</button>
+                            <button id="large" onclick='size(3)' class='btn'>L</button>
+                          </div>
+                                <div class="action-btns">
+                                    <a class="black-nollow-btn">
+                                     ADD TO CART   
+                                    </a>
+                                </div>
+                        </div>
+                    </div>
+        </div>
+ 
+</body>
+</html>
